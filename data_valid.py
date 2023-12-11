@@ -3,8 +3,13 @@ class Data_Valid:
     def validate(self, list):
         valid_int = []
         for item in list:
-            if item.isdigit() and int(item) > 0:
-                valid_int.append(int(item))
+            try:
+                number=(item)
+                if number > 0 :
+                 valid_int.append(number)
+            except ValueError:
+               pass
+               
         return valid_int
 validator = Data_Valid()
 
