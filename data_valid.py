@@ -5,7 +5,7 @@ class Data_Valid:
         for item in list:
             try:
                 number=(item)
-                if number > 0 :
+                if number >= 0 :
                  valid_int.append(number)
             except ValueError:
                pass
